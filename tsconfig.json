@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",                // Specify ECMAScript target version
+    "module": "ES6",                   // Use ES6 module syntax
+    "declaration": true,               // Generate declaration files (.d.ts)
+    "emitDeclarationOnly": true,       // Only emit declaration files
+    "outDir": "./dist",                // Output directory for generated files
+    "strict": true,                    // Enable strict type-checking options
+    "esModuleInterop": true,           // Enable ES module interop
+    "skipLibCheck": true,              // Skip type checking of declaration files
+    "moduleResolution": "node",        // Resolve modules using Node.js strategy
+    "forceConsistentCasingInFileNames": true // Enforce consistent file casing
+  },
+  "include": ["src/**/*.ts"],           // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "dist"]   // Exclude node_modules and dist directories
+}
