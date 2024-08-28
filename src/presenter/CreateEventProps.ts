@@ -3,5 +3,5 @@ import { DraftEvent } from "../models/event/DraftEvent";
 
 export interface CreateEventProps {
   profile: Profile;
-  draftEvent: DraftEvent[];
+  createEvent: (draftEvent: DraftEvent) => Promise<Event>;
 }
