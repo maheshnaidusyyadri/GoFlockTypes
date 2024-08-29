@@ -5,8 +5,8 @@ import { EventType } from "./EventType";
 import { EventVisibility } from "./EventVisibility";
 import { LocationInfo } from "./LocationInfo";
 export interface DraftEvent {
-    name?: string;
-    type?: EventType;
+    name: string;
+    type: EventType;
     description?: string;
     location?: LocationInfo;
     time?: EventTime;

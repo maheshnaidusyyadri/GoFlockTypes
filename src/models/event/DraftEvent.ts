@@ -10,8 +10,8 @@ import { LocationInfo } from "./LocationInfo";
 import { Transaction } from "../expenses/Transaction";
 
 export interface DraftEvent {
-  name?: string;
-  type?: EventType;
+  name: string;
+  type: EventType;
   description?: string;
   location?: LocationInfo;
   time?: EventTime;

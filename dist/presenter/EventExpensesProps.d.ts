@@ -1,8 +1,10 @@
+import { Event } from "../models/event/Event";
 import { Expense } from "../models/expenses/Expense";
+import { Transaction } from "../models/expenses/Transaction";
 export interface EventSplitBillProps {
-    eventId: string;
-    expenses: Expense[];
-    addExpense: (expense: Expense) => Promise<Expense>;
-    updateExpense: (expense: Expense) => Promise<Expense>;
-    deleteExpense: (expenseId: string) => Promise<Expense>;
+    event: Event;
+    transactions: Transaction[];
+    addTransaction: (transaction: Transaction) => Promise<Transaction>;
+    updateTransaction: (transaction: Transaction) => Promise<Transaction>;
+    deleteTransaction: (expenseId: string) => Promise<Expense>;
 }

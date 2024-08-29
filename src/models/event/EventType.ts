@@ -3,4 +3,10 @@ export type EventType =
   | "get_togather"
   | "vacation"
   | "family_event"
+  | "gender_reveal"
+  | "baby_shower"
+  | "anniversary"
+  | "wedding"
+  | "reunion"
+  | "party"
   | "other";

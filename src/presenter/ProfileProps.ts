@@ -6,4 +6,5 @@ export interface ProfileProps {
   setPreferredName: (prefName: string) => Promise<boolean>;
   setIsIntroShown: (isIntroShown: boolean) => Promise<boolean>;
   setSMSPreference: (smsNotifications: boolean) => Promise<boolean>;
+  logout: () => void;
 }
