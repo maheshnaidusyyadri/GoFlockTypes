@@ -1,4 +1,5 @@
 import { Currency } from "../settings/Currency";
+import { EventVisibility } from "./EventVisibility";
 
 export interface EventSettings {
   shareMedia: boolean;
@@ -6,4 +7,6 @@ export interface EventSettings {
   enableChats: boolean;
   allowCheckList: boolean;
   currency: Currency;
+
+  eventVisibility: EventVisibility;
 }
