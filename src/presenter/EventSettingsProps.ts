@@ -7,15 +7,13 @@ export interface EventSettingsProps {
   event: Event;
   eventSettings: EventSettings;
 
-  enableMediaSharing: (eventId: string) => Promise<EventSettings>;
-  disableMediaSharing: (eventId: string) => Promise<EventSettings>;
+  enableMediaSharing: (eventId: string) => Promise<boolean>;
+  disableMediaSharing: (eventId: string) => Promise<boolean>;
 
-  enableSplitBills: (eventId: string) => Promise<EventSettings>;
-  disableSplitBills: (eventId: string) => Promise<EventSettings>;
+  enableSplitBills: (eventId: string) => Promise<boolean>;
+  disableSplitBills: (eventId: string) => Promise<boolean>;
 
-  updateCurrency: (currency: Currency) => Promise<EventSettings>;
+  updateCurrency: (currency: Currency) => Promise<boolean>;
 
-  updateEventVisibility: (
-    eventVisibility: EventVisibility
-  ) => Promise<EventSettings>;
+  updateEventVisibility: (eventVisibility: EventVisibility) => Promise<boolean>;
 }
