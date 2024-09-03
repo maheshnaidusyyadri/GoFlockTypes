@@ -8,5 +8,5 @@ export interface EventSplitBillProps {
 
   addTransaction: (transaction: Transaction) => Promise<Transaction>;
   updateTransaction: (transaction: Transaction) => Promise<Transaction>;
-  deleteTransaction: (expenseId: string) => Promise<Expense>;
+  deleteTransaction: (expenseId: string) => Promise<boolean>;
 }

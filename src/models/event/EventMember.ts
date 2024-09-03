@@ -4,7 +4,7 @@ export interface EventMember {
   id?: string;
   flockId?: string;
   eventId: string;
-  rsvp: RSVP;
+  rsvp?: RSVP;
   name?: string;
   phoneNumber?: string;
   email?: string;
