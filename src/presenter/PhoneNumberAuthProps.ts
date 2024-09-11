@@ -4,4 +4,5 @@ export interface PhoneNumberAuthProps {
     phoneNumberWithCountryCode: string,
     otp: string
   ) => Promise<boolean>;
+  onSuccessfulVerification: () => void;
 }
