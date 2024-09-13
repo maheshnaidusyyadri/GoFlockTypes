@@ -17,7 +17,6 @@ export interface Event {
     location: LocationInfo;
     time: EventTime;
     visibility: EventVisibility;
-    admins: EventMember[];
     members: EventMember[];
     invitationCard: InvitationCard;
     settings: EventSettings;

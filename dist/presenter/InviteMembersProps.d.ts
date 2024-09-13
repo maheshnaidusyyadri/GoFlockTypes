@@ -1,5 +1,9 @@
+import { DeviceContext } from "../models/context/DeviceContext";
 import { EventMember } from "../models/event/EventMember";
+import { Profile } from "../models/profile/Profile";
 export interface InviteMembersProps {
+    profile: Profile;
+    deviceContext: DeviceContext;
     eventId: string;
     admins: EventMember[];
     members: EventMember[];

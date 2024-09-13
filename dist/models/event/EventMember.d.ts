@@ -1,3 +1,4 @@
+import { RoleType } from "./RoleType";
 import { RSVP } from "./Rsvp";
 export interface EventMember {
     id?: string;
@@ -7,4 +8,5 @@ export interface EventMember {
     name?: string;
     phoneNumber?: string;
     email?: string;
+    roles?: RoleType[];
 }
