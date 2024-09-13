@@ -19,4 +19,5 @@ export * from "./models/media/Media";
 export * from "./models/profile/Preferences";
 export * from "./models/profile/Profile";
 export * from "./models/settings/Currency";
+export * from "./models/context/DeviceContext";
 export * from "./presenter";
