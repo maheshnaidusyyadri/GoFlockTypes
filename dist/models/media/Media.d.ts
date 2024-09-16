@@ -4,6 +4,7 @@ export interface Media {
     eventId: string;
     type: "image" | "pdf" | "video";
     path: string;
+    downloadUrl?: string;
     createdAt: string;
     isDeleted: boolean;
 }
