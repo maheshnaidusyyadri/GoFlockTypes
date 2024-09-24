@@ -2,6 +2,7 @@ import { Profile } from "../models/profile/Profile";
 import { Event } from "../models/event/Event";
 import { EventType } from "../models/event/EventType";
 import { DeviceContext } from "../models/context/DeviceContext";
+import { ListType } from "../models/event/ListType";
 
 export interface DashboardProps {
   profile: Profile;
@@ -12,5 +13,5 @@ export interface DashboardProps {
   createNewEvent: () => void;
   openEvent: (eventId: string) => void;
   seeAllMyEvents: () => void;
-  seeAllEvents: (eventType: EventType) => void;
+  seeAllEvents: (listType: ListType) => void;
 }
