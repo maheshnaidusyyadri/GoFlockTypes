@@ -1,4 +1,5 @@
 import { DeviceContext } from "../models/context/DeviceContext";
+import { Contact } from "../models/event/Contact";
 import { EventMember } from "../models/event/EventMember";
 import { Profile } from "../models/profile/Profile";
 export interface InviteMembersProps {
@@ -7,7 +8,7 @@ export interface InviteMembersProps {
     eventId: string;
     admins: EventMember[];
     members: EventMember[];
-    getMembersFromContactList: () => Promise<EventMember>;
+    getMembersFromContactList: () => Promise<Contact[]>;
     addAdmin: (eventMember: EventMember) => Promise<EventMember>;
     removeAdmin: (eventMember: EventMember) => Promise<boolean>;
     addMember: (eventMember: EventMember) => Promise<EventMember>;

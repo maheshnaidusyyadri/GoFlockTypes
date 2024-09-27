@@ -18,6 +18,8 @@ export * from "./models/expenses/Expense";
 export * from "./models/expenses/Expenses";
 export * from "./models/expenses/Transaction";
 export * from "./models/media/Media";
+export * from "./models/media/UserGallaryItem";
+export * from "./models/media/UserFile";
 export * from "./models/profile/Preferences";
 export * from "./models/profile/Profile";
 export * from "./models/settings/Currency";
