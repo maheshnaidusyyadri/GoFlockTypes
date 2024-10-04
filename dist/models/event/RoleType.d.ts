@@ -1,1 +1,1 @@
-export type RoleType = "member" | "admin";
+export type RoleType = "member" | "admin" | "owner";

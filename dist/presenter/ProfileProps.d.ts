@@ -7,4 +7,5 @@ export interface ProfileProps {
     setIsIntroShown: (isIntroShown: boolean) => Promise<boolean>;
     setSMSPreference: (smsNotifications: boolean) => Promise<boolean>;
     logout: () => void;
+    deleteAccount: () => void;
 }
