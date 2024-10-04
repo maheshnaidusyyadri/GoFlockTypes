@@ -6,6 +6,10 @@ export interface EventProps {
     profile: Profile;
     deviceContext: DeviceContext;
     event: Event;
-    deleteEvent: (eventId: string) => void;
     submitRSVP: (eventId: string, rsvpUserId: string, rsvp: RSVP) => Promise<void>;
+    inviteMembers: (eventId: string) => void;
+    editEvent: (eventId: string) => void;
+    copyEventLink: (eventId: string) => void;
+    navigateToEventLocation: (eventId: string) => void;
+    deleteEvent: (eventId: string) => void;
 }
