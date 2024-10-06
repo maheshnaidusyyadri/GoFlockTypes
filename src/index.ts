@@ -9,6 +9,7 @@ export * from "./models/event/EventSettings";
 export * from "./models/event/EventTime";
 export * from "./models/event/EventType";
 export * from "./models/event/ListType";
+export * from "./models/event/EventType";
 export * from "./models/event/EventVisibility";
 export * from "./models/event/InvitationCard";
 export * from "./models/event/LocationInfo";
