@@ -14,4 +14,5 @@ export interface DraftEvent {
   visibility?: EventVisibility;
   admins?: EventMember[];
   settings?: EventSettings;
+  hostedBy?: string;
 }
