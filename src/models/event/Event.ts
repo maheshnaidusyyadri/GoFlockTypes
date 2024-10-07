@@ -13,11 +13,14 @@ export interface Event {
   id: string;
   owner: string;
   name: string;
+  hostedBy: string;
   type: EventType;
   description: string;
   location: LocationInfo;
   time: EventTime;
   visibility: EventVisibility;
+  // memberInvitationContactReference contains the phone nos and emails.
+  memberInvitationContactReference: string[];
   members: EventMember[];
   invitationCard: InvitationCard;
 

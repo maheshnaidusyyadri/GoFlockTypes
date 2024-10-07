@@ -12,11 +12,13 @@ export interface Event {
     id: string;
     owner: string;
     name: string;
+    hostedBy: string;
     type: EventType;
     description: string;
     location: LocationInfo;
     time: EventTime;
     visibility: EventVisibility;
+    memberInvitationContactReference: string[];
     members: EventMember[];
     invitationCard: InvitationCard;
     settings: EventSettings;
