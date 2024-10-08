@@ -11,6 +11,6 @@ export interface InviteMembersProps {
     getMembersFromContactList: () => Promise<Contact[]>;
     addAdmin: (eventMember: EventMember) => Promise<EventMember>;
     removeAdmin: (eventMember: EventMember) => Promise<boolean>;
-    addMember: (eventMember: EventMember) => Promise<EventMember>;
+    addMember: (contact: Contact) => Promise<EventMember>;
     removeMember: (eventMember: EventMember) => Promise<boolean>;
 }
