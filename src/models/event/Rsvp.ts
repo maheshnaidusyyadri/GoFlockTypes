@@ -3,6 +3,6 @@ export interface RSVP {
   count: number;
   comment?: string;
   uniqueDeviceId?: string;
-  kidsCount: number;
-  adultsCount: number;
+  kidsCount?: number;
+  adultsCount?: number;
 }
