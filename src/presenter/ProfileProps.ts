@@ -3,7 +3,7 @@ import { Profile } from "../models/profile/Profile";
 
 export interface ProfileProps {
   profile: Profile;
-  deviceContext: DeviceContext;
+  deviceContext?: DeviceContext;
 
   setPreferredName: (prefName: string) => Promise<boolean>;
   setIsIntroShown: (isIntroShown: boolean) => Promise<boolean>;

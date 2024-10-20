@@ -32,6 +32,5 @@ export interface Event {
 
   media: Media[];
   transactions: Transaction[];
-
   deleted: boolean;
 }
