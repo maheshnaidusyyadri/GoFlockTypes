@@ -31,7 +31,7 @@ export interface Event {
   checkListQuestions: CheckListItem[];
   checkListResponses: CheckListItem[];
 
-  counters: Counters;
+  counters?: Counters;
 
   media: Media[];
   transactions: Transaction[];
