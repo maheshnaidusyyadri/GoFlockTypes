@@ -1,5 +1,8 @@
 export interface RSVP {
   response: "attending" | "not-attending" | "maybe" | "not-answered";
-  comment?: string;
   count: number;
+  comment?: string;
+  uniqueDeviceId?: string;
+  kidsCount: number;
+  adultsCount: number;
 }

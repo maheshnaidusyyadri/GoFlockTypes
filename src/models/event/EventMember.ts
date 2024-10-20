@@ -10,5 +10,6 @@ export interface EventMember {
   phoneNumber?: string;
   email?: string;
   roles?: RoleType[];
-  profileImg?:string;
+  profileImg?: string;
+  addedByUid?: string;
 }
