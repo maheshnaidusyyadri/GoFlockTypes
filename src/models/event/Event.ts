@@ -8,6 +8,7 @@ import { EventVisibility } from "./EventVisibility";
 import { InvitationCard } from "./InvitationCard";
 import { LocationInfo } from "./LocationInfo";
 import { Transaction } from "../expenses/Transaction";
+import { Counters } from "./Counters";
 
 export interface Event {
   id: string;
@@ -29,6 +30,8 @@ export interface Event {
   // TODO: create seperate type for templates?
   checkListQuestions: CheckListItem[];
   checkListResponses: CheckListItem[];
+
+  counters: Counters;
 
   media: Media[];
   transactions: Transaction[];

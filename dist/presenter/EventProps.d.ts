@@ -8,7 +8,7 @@ export interface EventProps {
     deviceContext: DeviceContext;
     event: Event;
     eventRelation: EventRelation;
-    submitRSVP: (eventId: string, rsvpUserId: string, rsvp: RSVP) => Promise<void>;
+    submitRSVP: (eventId: string, rsvp: RSVP) => Promise<void>;
     inviteMembers: (eventId: string) => void;
     editEvent: (eventId: string) => void;
     copyEventLink: (eventId: string) => void;
