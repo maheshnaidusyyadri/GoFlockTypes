@@ -5,6 +5,7 @@ export * from "./EventMediaProps";
 export * from "./EventProps";
 export * from "./EventSettingsProps";
 export * from "./EventSplitBillProps";
+export * from "./EventAddExpenseProps";
 export * from "./IntroductionProps";
 export * from "./InviteMembersProps";
 export * from "./PhoneNumberAuthProps";
