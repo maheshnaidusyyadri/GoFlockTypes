@@ -11,7 +11,7 @@ export interface EventExpenseSummaryProps {
   transactions: Transaction[];
   expenses: Expense[];
 
-  onCreateTransaction: () => void;
-  onUpdateTransaction: () => void;
-  deleteTransaction: (expenseId: string) => Promise<boolean>;
+  onCreateTransaction: (eventId: string) => void;
+  onUpdateTransaction: (transactionId: string) => void;
+  deleteTransaction: (transactionId: string) => Promise<boolean>;
 }
