@@ -4,7 +4,7 @@ export * from "./EventListProps";
 export * from "./EventMediaProps";
 export * from "./EventProps";
 export * from "./EventSettingsProps";
-export * from "./EventSplitBillProps";
+export * from "./EventExpenseSummaryProps";
 export * from "./EventAddExpenseProps";
 export * from "./IntroductionProps";
 export * from "./InviteMembersProps";

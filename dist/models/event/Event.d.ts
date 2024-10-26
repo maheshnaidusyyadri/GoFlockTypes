@@ -25,7 +25,7 @@ export interface Event {
     settings: EventSettings;
     checkListQuestions: CheckListItem[];
     checkListResponses: CheckListItem[];
-    counters: Counters;
+    counters?: Counters;
     media: Media[];
     transactions: Transaction[];
     deleted: boolean;
