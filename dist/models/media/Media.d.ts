@@ -11,4 +11,5 @@ export interface Media {
   metadata?: UserMediaMetadata;
   width?: number;
   height?: number;
+  thumbnail?: string;
 }
