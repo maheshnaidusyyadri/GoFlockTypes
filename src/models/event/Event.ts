@@ -16,7 +16,6 @@ export interface Event {
   name: string;
   hostedBy: string;
   type: EventType;
-  image: string;
   description: string;
   location: LocationInfo;
   time: EventTime;

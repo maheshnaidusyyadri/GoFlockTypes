@@ -6,7 +6,6 @@ export interface InviteMembersProps {
     profile: Profile;
     deviceContext: DeviceContext;
     eventId: string;
-    admins: EventMember[];
     members: EventMember[];
     getMembersFromContactList: () => Promise<Contact[]>;
     addAdmin: (eventMember: EventMember) => Promise<EventMember>;

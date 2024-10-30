@@ -7,6 +7,7 @@ export interface Media {
   type: string;
   path: string;
   downloadUrl?: string;
+  thumbnailUrl?: string;
   createdAt: string;
   isDeleted: boolean;
   metadata?: UserMediaMetadata;

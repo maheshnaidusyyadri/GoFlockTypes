@@ -3,4 +3,6 @@ export interface UserMediaMetadata {
     name: string;
     size: number;
     type: string;
+    width?: number;
+    height?: number;
 }
