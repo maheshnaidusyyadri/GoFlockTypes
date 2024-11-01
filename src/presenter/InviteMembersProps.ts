@@ -8,6 +8,7 @@ export interface InviteMembersProps {
   deviceContext: DeviceContext;
   eventId: string;
   members: EventMember[];
+  contacts: Contact[];
 
   getMembersFromContactList: () => Promise<Contact[]>;
   importContactsFromDevice: () => Promise<Contact[]>;
