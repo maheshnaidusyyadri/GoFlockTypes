@@ -10,9 +10,11 @@ export interface InviteMembersProps {
   members: EventMember[];
 
   getMembersFromContactList: () => Promise<Contact[]>;
+  importContactsFromDevice: () => Promise<Contact[]>;
+
   addAdmin: (eventMember: EventMember) => Promise<EventMember>;
   removeAdmin: (eventMember: EventMember) => Promise<boolean>;
 
-  addMember: (contact: Contact) => Promise<EventMember>;
+  addMembers: (contact: Contact[]) => Promise<number>;
   removeMember: (eventMember: EventMember) => Promise<boolean>;
 }
