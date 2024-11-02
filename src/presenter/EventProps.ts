@@ -16,4 +16,10 @@ export interface EventProps {
   copyEventLink: (eventId: string) => void;
   navigateToEventLocation: (eventId: string) => void;
   deleteEvent: (eventId: string) => void;
+
+  sendOTP: (phoneNumberWithCountryCode: string) => Promise<boolean>;
+  verifyOTP: (
+    phoneNumberWithCountryCode: string,
+    otp: string
+  ) => Promise<boolean>;
 }
