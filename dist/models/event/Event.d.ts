@@ -21,7 +21,7 @@ export interface Event {
     visibility: EventVisibility;
     memberInvitationContactReference: string[];
     members: EventMember[];
-    invitationCard: InvitationCard;
+    invitationCard?: InvitationCard;
     settings: EventSettings;
     checkListQuestions: CheckListItem[];
     checkListResponses: CheckListItem[];
@@ -29,4 +29,12 @@ export interface Event {
     media: Media[];
     transactions: Transaction[];
     deleted: boolean;
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+    };
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+    };
 }

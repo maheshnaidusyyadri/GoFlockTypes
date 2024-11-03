@@ -23,7 +23,7 @@ export interface Event {
   // memberInvitationContactReference contains the phone nos and emails.
   memberInvitationContactReference: string[];
   members: EventMember[];
-  invitationCard: InvitationCard;
+  invitationCard?: InvitationCard;
 
   settings: EventSettings;
 
@@ -36,4 +36,14 @@ export interface Event {
   media: Media[];
   transactions: Transaction[];
   deleted: boolean;
+
+  createdAt?: {
+    seconds: number;
+    nanoseconds: number;
+  };
+
+  updatedAt?: {
+    seconds: number;
+    nanoseconds: number;
+  };
 }
