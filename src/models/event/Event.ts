@@ -9,6 +9,7 @@ import { InvitationCard } from "./InvitationCard";
 import { LocationInfo } from "./LocationInfo";
 import { Transaction } from "../expenses/Transaction";
 import { Counters } from "./Counters";
+import { Expense } from "../expenses/Expense";
 
 export interface Event {
   id: string;
@@ -28,14 +29,16 @@ export interface Event {
   settings: EventSettings;
 
   // TODO: create seperate type for templates?
-  checkListQuestions: CheckListItem[];
-  checkListResponses: CheckListItem[];
+  checkListQuestions?: CheckListItem[];
+  checkListResponses?: CheckListItem[];
 
   counters?: Counters;
 
-  media: Media[];
-  transactions: Transaction[];
-  deleted: boolean;
+  media?: Media[];
+  transactions?: Transaction[];
+  expenseSummary?: Expense[];
+
+  deleted?: boolean;
 
   createdAt?: {
     seconds: number;

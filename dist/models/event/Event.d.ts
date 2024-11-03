@@ -9,6 +9,7 @@ import { InvitationCard } from "./InvitationCard";
 import { LocationInfo } from "./LocationInfo";
 import { Transaction } from "../expenses/Transaction";
 import { Counters } from "./Counters";
+import { Expense } from "../expenses/Expense";
 export interface Event {
     id: string;
     owner: string;
@@ -23,12 +24,13 @@ export interface Event {
     members: EventMember[];
     invitationCard?: InvitationCard;
     settings: EventSettings;
-    checkListQuestions: CheckListItem[];
-    checkListResponses: CheckListItem[];
+    checkListQuestions?: CheckListItem[];
+    checkListResponses?: CheckListItem[];
     counters?: Counters;
-    media: Media[];
-    transactions: Transaction[];
-    deleted: boolean;
+    media?: Media[];
+    transactions?: Transaction[];
+    expenseSummary?: Expense[];
+    deleted?: boolean;
     createdAt?: {
         seconds: number;
         nanoseconds: number;
