@@ -8,5 +8,5 @@ export interface EventMediaProps {
     deviceContext: DeviceContext;
     media: Media[];
     addMedia: (mediaFiles: string[], metadataList: UserMediaMetadata[]) => Promise<Media[]>;
-    deleteMedia: (mediaId: string) => Promise<boolean>;
+    deleteMedia: (mediaIds: string[]) => Promise<boolean>;
 }
