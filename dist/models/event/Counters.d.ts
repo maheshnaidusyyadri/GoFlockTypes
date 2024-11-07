@@ -1,9 +1,22 @@
 export interface Counters {
-    totalRsvpCount: number;
-    totalAttendingCount: number;
-    totalMaybeCount: number;
-    totalDeclinedCount: number;
-    totalInvitedCount: number;
-    totalAdultsCount: number;
-    totalChildrenCount: number;
+    attendingRSVP?: {
+        total: number;
+        adults: number;
+        kids: number;
+    };
+    maybeRSVP?: {
+        total: number;
+        adults: number;
+        kids: number;
+    };
+    declinedRSVP?: {
+        total: number;
+        adults: number;
+        kids: number;
+    };
+    totalRSVP?: {
+        total: number;
+        adults: number;
+        kids: number;
+    };
 }
