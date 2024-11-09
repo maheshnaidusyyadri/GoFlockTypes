@@ -8,4 +8,5 @@ export interface Profile {
   isIntroShown: boolean;
   pictureUrl: string;
   preferences: Preferences;
+  notificationToken?: string;
 }
