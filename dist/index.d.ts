@@ -15,6 +15,7 @@ export * from "./models/event/LocationInfo";
 export * from "./models/event/Rsvp";
 export * from "./models/event/DraftEvent";
 export * from "./models/event/Pass";
+export * from "./models/event/CreateEventMode";
 export * from "./models/expenses/Expense";
 export * from "./models/expenses/Expenses";
 export * from "./models/expenses/Transaction";
