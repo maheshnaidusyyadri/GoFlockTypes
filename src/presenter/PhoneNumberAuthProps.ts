@@ -5,9 +5,7 @@ export interface PhoneNumberAuthProps {
   profile: Profile;
   deviceContext?: DeviceContext;
   sendOTP: (phoneNumberWithCountryCode: string) => Promise<boolean>;
-  verifyOTP: (
-    phoneNumberWithCountryCode: string,
-    otp: string
-  ) => Promise<boolean>;
+  verifyOTP: (verificationCode: string) => Promise<boolean>;
+  resendOTP: (phoneNumberWithCountryCode: string) => Promise<boolean>;
   onSuccessfulVerification: () => void;
 }
