@@ -3,4 +3,5 @@ export type VisitType =
   | "admin"
   | "owner"
   | "visitor"
+  | "pass"
   | "unauthorized";

@@ -1,8 +1,7 @@
+import { Contact } from "./Contact";
 export interface Pass {
     id?: string;
     eventId: string;
-    name?: string;
-    phoneNumber?: string;
-    email?: string;
+    contact: Contact;
     addedByUid: string;
 }

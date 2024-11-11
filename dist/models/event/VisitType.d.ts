@@ -1,1 +1,1 @@
-export type VisitType = "member" | "admin" | "owner" | "visitor" | "unauthorized";
+export type VisitType = "member" | "admin" | "owner" | "visitor" | "pass" | "unauthorized";
