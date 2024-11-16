@@ -12,5 +12,5 @@ export interface CreateNewEventProps {
 
   searchLocation: (query: string) => Promise<LocationInfo[]>;
   createEvent: (draftEvent: DraftEvent) => Promise<Event>;
-  goToEvent: (eventId: string) => void;
+  goToEvent: (eventId: string, mode?: CreateEventMode) => void;
 }
