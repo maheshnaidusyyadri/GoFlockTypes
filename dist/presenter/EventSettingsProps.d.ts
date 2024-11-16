@@ -1,5 +1,6 @@
 import { DeviceContext } from "../models/context/DeviceContext";
 import { Event } from "../models/event/Event";
+import { EventRelation } from "../models/event/EventRelation";
 import { EventSettings } from "../models/event/EventSettings";
 import { EventVisibility } from "../models/event/EventVisibility";
 import { Profile } from "../models/profile/Profile";
@@ -9,6 +10,7 @@ export interface EventSettingsProps {
     deviceContext: DeviceContext;
     event: Event;
     eventSettings: EventSettings;
+    eventRelation: EventRelation;
     enableMediaSharing: (eventId: string) => Promise<boolean>;
     disableMediaSharing: (eventId: string) => Promise<boolean>;
     enableSplitBills: (eventId: string) => Promise<boolean>;
