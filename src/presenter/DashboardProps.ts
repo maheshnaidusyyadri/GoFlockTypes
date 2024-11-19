@@ -7,6 +7,7 @@ export interface DashboardProps {
   profile: Profile;
   deviceContext: DeviceContext;
   activeEvents: Event[];
+  pastEvents: Event[];
   myEvents: Event[];
 
   createNewEvent: () => void;
