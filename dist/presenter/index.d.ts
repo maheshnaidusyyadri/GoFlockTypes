@@ -7,6 +7,6 @@ export * from "./EventSettingsProps";
 export * from "./EventExpenseSummaryProps";
 export * from "./EventAddExpenseProps";
 export * from "./IntroductionProps";
-export * from "./InviteMembersProps";
+export * from "./ManageMembersProps";
 export * from "./PhoneNumberAuthProps";
 export * from "./ProfileProps";

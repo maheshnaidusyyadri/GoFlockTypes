@@ -5,7 +5,7 @@ import { EventMember } from "../models/event/EventMember";
 import { EventRelation } from "../models/event/EventRelation";
 import { Profile } from "../models/profile/Profile";
 
-export interface InviteMembersProps {
+export interface ManageMembersProps {
   profile: Profile;
   deviceContext: DeviceContext;
   eventId: string;
