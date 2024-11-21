@@ -14,7 +14,7 @@ export interface InviteContactsProps {
     eventRelation: EventRelation;
     importContactsFromDevice: () => Promise<void>;
     importContactsFromGoogleContacts: () => Promise<void>;
-    sendMessageToContacts: () => Promise<void>;
+    sendMessageToContacts: (memberIds: string[]) => Promise<void>;
     addMembers: (contact: Contact[]) => Promise<number>;
     removeMember: (eventMember: EventMember) => Promise<boolean>;
 }
