@@ -14,6 +14,7 @@ export interface CreateNewEventProps {
   eventType?: string | undefined;
 
   searchLocation: (query: string) => Promise<LocationInfo[]>;
+  generateInvitationDescription: (draftEvent: DraftEvent) => string;
   createEvent: (draftEvent: DraftEvent) => Promise<Event>;
   goToEvent: (eventId: string, mode?: CreateEventMode) => void;
 }
