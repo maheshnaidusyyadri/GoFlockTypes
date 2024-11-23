@@ -11,7 +11,7 @@ export interface CreateNewEventProps {
   profile: Profile;
   mode: CreateEventMode;
   isEditing?: boolean;
-  eventType?: EventType | undefined;
+  eventType?: string | undefined;
 
   searchLocation: (query: string) => Promise<LocationInfo[]>;
   createEvent: (draftEvent: DraftEvent) => Promise<Event>;
