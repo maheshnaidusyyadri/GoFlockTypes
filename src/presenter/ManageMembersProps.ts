@@ -23,4 +23,7 @@ export interface ManageMembersProps {
   removeMember: (eventMember: EventMember) => Promise<boolean>;
 
   goToInviteContacts: (eventId: string) => void;
+
+  copyEventLink: (eventId: string) => void;
+  socialShareEventLink: (eventId: string) => void;
 }
