@@ -4,7 +4,6 @@ import { LocationInfo } from "../models/event/LocationInfo";
 import { Event } from "../models/event/Event";
 import { DeviceContext } from "../models/context/DeviceContext";
 import { CreateEventMode } from "../models/event/CreateEventMode";
-import { EventType } from "@goflock/types";
 
 export interface CreateNewEventProps {
   deviceContext: DeviceContext;
