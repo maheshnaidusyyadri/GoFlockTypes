@@ -22,7 +22,7 @@ export interface Event {
     visibility: EventVisibility;
     memberInvitationContactReference: string[];
     members: EventMember[];
-    invitationCard?: InvitationCard;
+    invitationCards?: InvitationCard[];
     settings: EventSettings;
     checkListQuestions?: CheckListItem[];
     checkListResponses?: CheckListItem[];
