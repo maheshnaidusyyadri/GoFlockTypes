@@ -24,7 +24,7 @@ export interface Event {
   // memberInvitationContactReference contains the phone nos and emails.
   memberInvitationContactReference: string[];
   members: EventMember[];
-  invitationCards?: InvitationCard[];
+  invitationCards?: Media[];
 
   settings: EventSettings;
 
