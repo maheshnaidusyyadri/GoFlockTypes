@@ -15,7 +15,8 @@ export interface EventMediaProps {
 
   addMedia: (
     mediaFiles: string[],
-    metadataList: UserMediaMetadata[]
+    metadataList: UserMediaMetadata[],
+    firestoreCollectionName: string
   ) => Promise<Media[]>;
 
   deleteMedia: (mediaIds: string[]) => Promise<boolean>;
