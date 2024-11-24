@@ -20,7 +20,8 @@ export interface EventProps {
 
   addInvitationCards: (
     mediaFiles: string[],
-    metadataList: UserMediaMetadata[]
+    metadataList: UserMediaMetadata[],
+    firestoreCollectionName: string
   ) => Promise<Media[]>;
 
   sendOTP: (phoneNumberWithCountryCode: string) => Promise<boolean>;

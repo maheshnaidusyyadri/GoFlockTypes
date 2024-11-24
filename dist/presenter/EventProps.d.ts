@@ -15,7 +15,7 @@ export interface EventProps {
     copyEventLink: (eventId: string) => void;
     navigateToEventLocation: (eventId: string) => void;
     deleteEvent: (eventId: string) => void;
-    addInvitationCards: (mediaFiles: string[], metadataList: UserMediaMetadata[]) => Promise<Media[]>;
+    addInvitationCards: (mediaFiles: string[], metadataList: UserMediaMetadata[], firestoreCollectionName: string) => Promise<Media[]>;
     sendOTP: (phoneNumberWithCountryCode: string) => Promise<boolean>;
     verifyOTP: (phoneNumberWithCountryCode: string, otp: string) => Promise<boolean>;
 }
