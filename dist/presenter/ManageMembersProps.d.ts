@@ -17,4 +17,5 @@ export interface ManageMembersProps {
     removeAdmin: (eventMember: EventMember) => Promise<boolean>;
     addMembers: (contact: Contact[]) => Promise<number>;
     removeMember: (eventMember: EventMember) => Promise<boolean>;
+    goToInviteContacts: (eventId: string) => void;
 }
