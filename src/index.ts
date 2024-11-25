@@ -11,6 +11,7 @@ export * from "./models/event/EventType";
 export * from "./models/event/ListType";
 export * from "./models/event/EventType";
 export * from "./models/event/EventVisibility";
+export * from "./models/event/EventMinDetails";
 export * from "./models/event/InvitationCard";
 export * from "./models/event/LocationInfo";
 export * from "./models/event/Rsvp";

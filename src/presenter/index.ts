@@ -11,3 +11,4 @@ export * from "./ManageMembersProps";
 export * from "./InviteContactsProps";
 export * from "./PhoneNumberAuthProps";
 export * from "./ProfileProps";
+export * from "./GuestOnboardingProps";
