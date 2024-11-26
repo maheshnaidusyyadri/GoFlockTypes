@@ -6,7 +6,8 @@ export interface GuestOnboardingProps {
     deviceContext: DeviceContext;
     eventRelation: EventRelation;
     eventMinDetails: EventMinDetails;
-    sendOTP: (phoneNumber: string) => Promise<boolean>;
-    verifyOTP: (phoneNumber: string, otp: string) => Promise<boolean>;
-    onSuccessfulAuth: () => void;
+    sendOTP: (phoneNumberWithCountryCode: string) => Promise<boolean>;
+    verifyOTP: (verificationCode: string) => Promise<boolean>;
+    resendOTP: (phoneNumberWithCountryCode: string) => Promise<boolean>;
+    onSuccessfulVerification: () => void;
 }
