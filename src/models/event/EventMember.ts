@@ -12,4 +12,5 @@ export interface EventMember {
   roles?: RoleType[];
   profileImg?: string;
   addedByUid?: string;
+  notificationCount?: number;
 }

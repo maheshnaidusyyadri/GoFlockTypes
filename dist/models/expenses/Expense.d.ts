@@ -3,4 +3,5 @@ export interface Expense {
     userId: string;
     amount: number;
     currency: Currency;
+    name: string;
 }
