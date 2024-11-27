@@ -5,7 +5,6 @@ import { EventSettings } from "./EventSettings";
 import { EventTime } from "./EventTime";
 import { EventType } from "./EventType";
 import { EventVisibility } from "./EventVisibility";
-import { InvitationCard } from "./InvitationCard";
 import { LocationInfo } from "./LocationInfo";
 import { Transaction } from "../expenses/Transaction";
 import { Counters } from "./Counters";
