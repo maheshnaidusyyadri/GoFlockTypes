@@ -5,4 +5,5 @@ export interface RSVP {
   uniqueDeviceId?: string;
   kidsCount?: number;
   adultsCount?: number;
+  name?: string;
 }
