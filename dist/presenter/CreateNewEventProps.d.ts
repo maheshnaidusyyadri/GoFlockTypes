@@ -10,8 +10,10 @@ export interface CreateNewEventProps {
     mode: CreateEventMode;
     isEditing?: boolean;
     eventType?: string | undefined;
+    event?: DraftEvent;
     searchLocation: (query: string) => Promise<LocationInfo[]>;
     generateInvitationDescription: (draftEvent: DraftEvent) => Promise<string>;
     createEvent: (draftEvent: DraftEvent) => Promise<Event>;
+    updateEvent: (draftEvent: DraftEvent) => Promise<Event>;
     goToEvent: (eventId: string, mode?: CreateEventMode) => void;
 }
