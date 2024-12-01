@@ -10,6 +10,7 @@ export interface EventMediaProps {
     event: Event;
     eventRelation: EventRelation;
     media: Media[];
+    fetchImagePathsWithPagination: () => Promise<void>;
     addMedia: (files: FileList) => Promise<Media[]>;
     deleteMedia: (mediaIds: string[]) => Promise<boolean>;
 }
