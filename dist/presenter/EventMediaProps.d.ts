@@ -10,6 +10,7 @@ export interface EventMediaProps {
     event: Event;
     eventRelation: EventRelation;
     media: Media[];
+    fetchMedia: () => Promise<boolean>;
     addMedia: (files: FileList) => Promise<Media[]>;
     deleteMedia: (mediaIds: string[]) => Promise<boolean>;
 }
