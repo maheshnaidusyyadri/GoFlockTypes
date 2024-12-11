@@ -15,6 +15,7 @@ export interface Event {
   owner: string;
   name: string;
   hostedBy: string;
+  slug: string;
   type: EventType;
   description: string;
   location: LocationInfo;
